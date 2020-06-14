@@ -3,16 +3,12 @@
   src: url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 }
 
-html {
-  overflow-y: hidden;
-}
-
 body {
-  position: relative;
+  overflow-x: hidden;
+  /* position: absolute; */
   margin: 0;
   padding: 0;
   font-family: "Sriracha";
-  overflow-x: hidden;
 }
 .header0 {
   width: 100%;
@@ -153,7 +149,7 @@ body {
     justify-content: space-evenly;
     z-index: -1;
     width: 70%;
-    transform: translateX(100%);
+    display: none;
     transition: 1s;
     font-size: 25px;
     z-index: 0;
@@ -162,6 +158,8 @@ body {
     display: flex;
   }
   .header1 ul.slide {
-    transform: translateX(0);
+    transition: 1s;
+    transform: translateX(0%);
+    display: flex;
   }
 }
