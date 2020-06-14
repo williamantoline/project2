@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header0">
+        <div class="header1">
+            <h2>LogoHere</h2>
+            <h3>JudulWebsite</h3>
+            <span class="spanheader1"></span>
+            <ul>
+                <li><a href=""><button>Home</button></a></li>
+                <li><a href=""><button>About</button></a></li>
+                <li><a href=""><button>Contact</button></a></li>
+                <li><a href=""><button>Log In</button></a></li>
+                <li><a href=""><button id="btn1">Register</button></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <input id="checkbox" type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="btn">
+            <a id="playbtn" href=""><button>Play!</button></a>
+        </div>
+    </div>
+
+    <script src="scriptresp1.js"></script>
+</body>
+
+</html>

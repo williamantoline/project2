@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Sriracha";
+  src: url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sriracha";
+  overflow-x: hidden;
+}
+.header0 {
+  width: 100%;
+  height: 370px;
+  background-color: purple;
+}
+.header1 {
+  width: 100%;
+  height: 74px;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header1 h2 {
+  text-align: start;
+}
+.header1 .spanheader1 {
+  width: 8%;
+}
+.header1 ul {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  /* background: yellow; */
+  justify-content: space-between;
+}
+.header1 ul li {
+  list-style-type: none;
+}
+.header1 ul li a {
+  text-decoration: none;
+  margin-right: 30px;
+}
+.header1 ul li a button {
+  width: 70px;
+  font-size: 18px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.header1 ul li a #btn1 {
+  width: 85px;
+  height: 30px;
+  border: 2px solid white;
+}
+#checkbox {
+  opacity: 0;
+}
+
+.btn {
+  margin: 267px auto;
+  width: 25%;
+}
+.btn #playbtn {
+  margin: 0 auto;
+  background-color: aqua;
+}
+.btn #playbtn button {
+  background-color: blue;
+  width: 100%;
+  height: 57px;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header1 {
+    background-color: ;
+  }
+
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 18px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+
+  /* Hamburger Menu Animation */
+
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 0;
+  }
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-2px, 0);
+  }
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0) translate(-1px, 0);
+  }
+
+  .header1 ul {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    height: 100vh;
+    background-color: purple;
+    top: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    width: 70%;
+    transform: translateX(100%);
+    transition: 1s;
+    font-size: 25px;
+    z-index: 0;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .header1 ul.slide {
+    transform: translateX(0);
+  }
+}
